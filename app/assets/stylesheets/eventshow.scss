@@ -1,0 +1,23 @@
+.show_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.show_li {
+  float: left;
+  padding: 2px 5px;
+  margin: 10px 0;
+  border-right: 1px solid;
+}
+
+.show_li_last {
+  float: left;
+  padding: 2px 5px;
+  margin: 10px 0;
+}
+
+.show_footer {
+  margin-bottom: 50px;
+}

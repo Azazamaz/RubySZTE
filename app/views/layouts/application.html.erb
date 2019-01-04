@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rendezvényszervező</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'navbar' %>
+    <%= stylesheet_link_tag 'eventshow' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="page-wrap">
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/alerts' %>
+    <%= yield %>
+  </div>
+  </body>
+</html>

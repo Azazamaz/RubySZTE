@@ -1,0 +1,13 @@
+<% if current_user %>
+  <ul class="navbar_ul">
+    <li class="navbar_li"><a><%= link_to 'Események', events_path %></a></li>
+    <li class="navbar_li"><a><%= link_to 'Profil módosítása', edit_user_registration_path %></a></li>
+    <li class="navbar_li"><a><%= link_to 'Kijelentkezés', destroy_user_session_path, method: :delete %></a></li>
+  </ul>
+<% else %>
+  <ul class="navbar_ul">
+    <li class="navbar_li"><a><%= link_to 'Bejelentkezés', new_user_session_path %></a></li>
+    <li class="navbar_li"><a><%= link_to 'Regisztráció', new_user_registration_path %></a></li>
+  </ul>
+
+<% end %>

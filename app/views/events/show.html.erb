@@ -1,0 +1,36 @@
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @event.category %>
+</p>
+
+<p>
+  <strong>Participants:</strong>
+  <%= @event.participants %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @event.user.username %>
+</p>
+
+<%= link_to 'Vissza', events_path %>

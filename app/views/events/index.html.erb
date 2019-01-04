@@ -1,0 +1,23 @@
+<main>
+  <% @events.each do |e| %>
+    <h3><%= e.name %>, <%= e.location %></h3>
+    <article>
+      <div><%= e.description %></div>
+      <ul class="show_ul">
+        <li class="show_li">Kategória: <%= e.category %></li>
+        <li class="show_li">Résztvevők: <%= e.participants %></li>
+        <li class="show_li_last">Szervező: <%= e.user.username %></li>
+      </ul>
+    </article>
+    <footer class="show_footer"><%= e.date %></footer>
+    <% if current_user && current_user.admin %>
+      <td><%= link_to 'Szerkesztés', edit_event_path(event) %></td>
+      <td><%= button_to 'Törlés', event, :method => :delete, data: { confirm: 'Biztos benne?' } %></td>
+    <% end %>
+  <% end %>
+</main>
+
+<br>
+<%= link_to 'Új esemény', new_event_path %>
+<br>
+<%= link_to 'Vissza', :back %>
