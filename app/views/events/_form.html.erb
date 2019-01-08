@@ -10,38 +10,34 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :event_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :location %>
-    <%= form.text_field :location, id: :event_location %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :event_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date %>
-    <%= form.datetime_select :date, id: :event_date %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category, id: :event_category %>
-  </div>
-
-  <div class="field">
-    <%= form.label :participants %>
-    <%= form.number_field :participants, id: :event_participants %>
-  </div>
+  <table style="border-spacing: 1em; border-collapse: separate;">
+    <tr>
+      <td><%= form.label 'Név' %></td>
+      <td><%= form.text_field :name, id: :event_name %></td>
+    </tr>
+    <tr>
+      <td><%= form.label 'Helyszín' %></td>
+      <td><%= form.text_field :location, id: :event_location %></td>
+    </tr>
+    <tr>
+      <td><%= form.label 'Leírás' %></td>
+      <td><%= form.text_area :description, id: :event_description, cols: "60", rows: "3" %></td>
+    </tr>
+    <tr>
+      <td><%= form.label 'Dátum' %></td>
+      <td><%= form.datetime_select :date, id: :event_date %></td>
+    </tr>
+    <tr>
+      <td> <%= form.label 'Kategória' %></td>
+      <td> <%= form.select :category, ['Művészet', 'Sport', 'Szórakozás', 'Egyetem', 'Kiállítás', 'Utazás'] %></td>
+    </tr>
+    <tr>
+      <td><%= form.label 'Résztvevők' %></td>
+      <td><%= form.number_field :participants, id: :event_participants, :value => 0 %></td>
+    </tr>
+  </table>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Létrehozás' %>
   </div>
 <% end %>

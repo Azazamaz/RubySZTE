@@ -1,6 +1,24 @@
 <% if current_user %>
-  <h1>Üdvözöljük <%= current_user.username %>!</h1>
+  <h1 align="center">Üdvözöljük <%= current_user.username %>!
+    <% if current_user.admin %>
+      (admin)
+    <% end %>
+  </h1>
 <% else  %>
-  <h1>Üdvözöljük kedves vendégünket!</h1>
+  <h1 align="center">Üdvözöljük kedves vendégünket!</h1>
+  <% first_events = Event.first(2) %>
+  <% first_events.each do |fe| %>
+    <div class="event_div">
+      <h3><%= fe.name %>, <%= fe.location %></h3>
+      <article>
+        <div><%= fe.description %></div>
+        <ul class="show_ul">
+          <li class="show_li_not_signed">Kategória: <%= fe.category %></li>
+        </ul>
+      </article>
+      <footer class="show_footer"><%= fe.date %></footer>
+    </div>
+  <% end %>
+  <p align="center"><strong>További eseményekhez jelentkezzen be vagy regisztráljon!</strong></p>
 <% end %>
 

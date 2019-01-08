@@ -21,6 +21,12 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
+  <div class="field">
+    <%= f.label 'Kedvenc kategória' %><br />
+    <%= f.select :favourite, ['Művészet', 'Sport', 'Szórakozás', 'Egyetem', 'Kiállítás', 'Utazás'] %>
+  </div>
+  <br />
+
   <div class="actions">
     <%= f.submit "Regisztráció" %>
   </div>
