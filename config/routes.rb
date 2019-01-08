@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :events
+  get 'favourite', to: 'events#favourite'
   root to: 'pages#welcome'
 
   devise_for :users
