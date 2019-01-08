@@ -7,17 +7,33 @@
 
 .show_li {
   float: left;
-  padding: 2px 5px;
+  padding: 5px 5px;
   margin: 10px 0;
   border-right: 1px solid;
 }
 
-.show_li_last {
+.show_li_not_signed {
   float: left;
-  padding: 2px 5px;
+  padding: 5px 5px;
   margin: 10px 0;
 }
 
+.show_li_last {
+  float: left;
+  padding: 5px 5px;
+  margin: 10px 0;
+}
+
+.show_footer td {
+  float: left;
+}
+
 .show_footer {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.event_div {
+  border: 1px solid;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
