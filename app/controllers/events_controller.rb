@@ -21,6 +21,10 @@ class EventsController < ApplicationController
   def edit
   end
 
+  #GET /events/favourite
+  def favourite
+  end
+
   # POST /events
   # POST /events.json
   def create
@@ -28,7 +32,7 @@ class EventsController < ApplicationController
     @event.user = current_user
     respond_to do |format|
       if @event.save
-        format.html { redirect_to @event, notice: 'Esemény sikeresen létrehozva!' }
+        format.html { redirect_to events_url, notice: 'Esemény sikeresen létrehozva!' }
         format.json { render :show, status: :created, location: @event }
       else
         format.html { render :new }
@@ -42,7 +46,7 @@ class EventsController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(event_params)
-        format.html { redirect_to @event, notice: 'Esemény frissítése sikeres!' }
+        format.html { redirect_to events_url, notice: 'Esemény frissítése sikeres!' }
         format.json { render :show, status: :ok, location: @event }
       else
         format.html { render :edit }
