@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1834fe73-bac4-4a0a-9704-2e1ee21d3eef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-    </list>
+    <list default="true" id="1834fe73-bac4-4a0a-9704-2e1ee21d3eef" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -20,7 +18,7 @@
     <session id="-434540369">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.101" value="1" />
           <entry key="project.open.time.105" value="1" />
           <entry key="project.open.time.119" value="1" />
@@ -396,16 +394,15 @@
       <workItem from="1547032886937" duration="4434000" />
       <workItem from="1547049140473" duration="725000" />
       <workItem from="1547064440090" duration="7488000" />
-      <workItem from="1547111114933" duration="3804000" />
+      <workItem from="1547111114933" duration="4397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62358000" />
+    <option name="totallyTimeSpent" value="62951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="653" y="15" width="697" height="735" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38932496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
