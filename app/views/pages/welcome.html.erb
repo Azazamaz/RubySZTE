@@ -4,6 +4,21 @@
       (admin)
     <% end %>
   </h1>
+  <p align="center"><strong>Legnépszerűbb események:</strong></p>
+  <% popular_events = Event.order(participants: :desc).first(8) %>
+  <% popular_events.each do |pe| %>
+    <div class="event_div">
+      <h3><%= pe.name %>, <%= pe.location %></h3>
+      <article>
+        <div><%= pe.description %></div>
+        <ul class="show_ul">
+          <li class="show_li">Kategória: <%= pe.category %></li>
+          <li class="show_li">Résztvevők: <%= pe.participants %></li>
+          <li class="show_li_last">Szervező: <%= pe.user.username %></li>
+        </ul>
+      </article>
+    </div>
+  <% end %>
 <% else  %>
   <h1 align="center">Üdvözöljük kedves vendégünket!</h1>
   <% first_events = Event.first(2) %>
