@@ -1,6 +1,6 @@
 <h1 align="center">Kedvenc kategória eseményei</h1>
-<% fav_events = Event.where(category: current_user.favourite) %>
-<% fav_events.each do |fae| %>
+<% @fav_events = Event.where(category: current_user.favourite) %>
+<% @fav_events.each do |fae| %>
   <div class="event_div">
     <h3><%= fae.name %>, <%= fae.location %></h3>
     <article>
@@ -8,7 +8,8 @@
       <ul class="show_ul">
         <li class="show_li">Kategória: <%= fae.category %></li>
         <li class="show_li">Résztvevők: <%= fae.participants %></li>
-        <li class="show_li_last">Szervező: <%= fae.user.username %></li>
+        <li class="show_li">Szervező: <%= fae.user.username %></li>
+        <li class="show_li_last"><%= button_to 'Feliratkozás', fae, :method => :get %></li>
       </ul>
     </article>
     <footer class="show_footer"><%= fae.date %></footer>

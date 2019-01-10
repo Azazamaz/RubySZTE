@@ -25,6 +25,8 @@
 
 <p>
   <strong>Résztvevők:</strong>
+  <% @event.participants += 1 %>
+  <% @event.save %>
   <%= @event.participants %>
 </p>
 

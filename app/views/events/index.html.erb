@@ -7,7 +7,8 @@
         <ul class="show_ul">
           <li class="show_li">Kategória: <%= e.category %></li>
           <li class="show_li">Résztvevők: <%= e.participants %></li>
-          <li class="show_li_last">Szervező: <%= e.user.username %></li>
+          <li class="show_li">Szervező: <%= e.user.username %></li>
+          <li class="show_li_last"><%= button_to 'Feliratkozás', e, :method => :get %></li>
         </ul>
       </article>
       <footer class="show_footer"><%= e.date %></footer>
