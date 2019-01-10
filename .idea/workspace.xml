@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1834fe73-bac4-4a0a-9704-2e1ee21d3eef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -44,7 +42,7 @@
           <entry key="erb" value="89" />
           <entry key="jbuilder" value="3" />
           <entry key="js" value="8" />
-          <entry key="rb" value="60" />
+          <entry key="rb" value="61" />
           <entry key="scss" value="18" />
           <entry key="yml" value="9" />
         </counts>
@@ -54,7 +52,7 @@
           <entry key="CSS" value="6" />
           <entry key="JavaScript" value="8" />
           <entry key="RHTML" value="89" />
-          <entry key="Ruby" value="71" />
+          <entry key="Ruby" value="72" />
           <entry key="SCSS" value="18" />
           <entry key="YAML" value="9" />
         </counts>
@@ -65,7 +63,7 @@
           <entry key="css" value="310" />
           <entry key="erb" value="5671" />
           <entry key="js" value="199" />
-          <entry key="rb" value="6705" />
+          <entry key="rb" value="6733" />
           <entry key="scss" value="570" />
           <entry key="yml" value="20" />
         </counts>
@@ -75,7 +73,7 @@
           <entry key="CSS" value="310" />
           <entry key="JavaScript" value="199" />
           <entry key="RHTML" value="5671" />
-          <entry key="Ruby" value="6953" />
+          <entry key="Ruby" value="6981" />
           <entry key="SCSS" value="570" />
           <entry key="YAML" value="20" />
         </counts>
@@ -111,11 +109,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
               <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -147,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/navbar.css" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
@@ -172,6 +178,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -187,8 +194,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="728" />
-    <option name="y" value="11" />
+    <option name="x" value="653" />
+    <option name="y" value="15" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -254,6 +261,12 @@
               <item name="RubySZTE" type="b2602c69:ProjectViewProjectNode" />
               <item name="RubySZTE" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RubySZTE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RubySZTE" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="environments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RubySZTE" type="b2602c69:ProjectViewProjectNode" />
@@ -393,15 +406,15 @@
       <workItem from="1547032886937" duration="4434000" />
       <workItem from="1547049140473" duration="725000" />
       <workItem from="1547064440090" duration="7488000" />
-      <workItem from="1547111114933" duration="2817000" />
+      <workItem from="1547111114933" duration="3491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61371000" />
+    <option name="totallyTimeSpent" value="62045000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="728" y="11" width="697" height="735" extended-state="0" />
+    <frame x="653" y="15" width="697" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38932496" />
@@ -457,13 +470,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/config/manifest.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="31" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor" />
@@ -722,6 +728,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
         </state>
       </provider>
     </entry>
